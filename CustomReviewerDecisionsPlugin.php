@@ -137,6 +137,18 @@ class CustomReviewerDecisionsPlugin extends GenericPlugin
                     }
                 }
 
+                $colorOptions = [
+                    'green' => __('plugins.generic.customReviewerDecisionsPlugin.color.green'),
+                    'blue' => __('plugins.generic.customReviewerDecisionsPlugin.color.blue'),
+                    'orange' => __('plugins.generic.customReviewerDecisionsPlugin.color.orange'),
+                    'red' => __('plugins.generic.customReviewerDecisionsPlugin.color.red'),
+                    'purple' => __('plugins.generic.customReviewerDecisionsPlugin.color.purple'),
+                    'teal' => __('plugins.generic.customReviewerDecisionsPlugin.color.teal'),
+                    'darkred' => __('plugins.generic.customReviewerDecisionsPlugin.color.darkred'),
+                    'gray' => __('plugins.generic.customReviewerDecisionsPlugin.color.gray'),
+                ];
+
+                $router = $request->getRouter();
                 $templateMgr->assign([
                     'pluginName' => $this->getName(),
                     'decisions' => $decisions,
@@ -144,9 +156,17 @@ class CustomReviewerDecisionsPlugin extends GenericPlugin
                     'localeNames' => $localeNames,
                     'primaryLocale' => $primaryLocale,
                     'currentLocale' => Locale::getLocale(),
+                    'colorOptions' => $colorOptions,
+                    'nextDecisionId' => $service->getNextAvailableId($contextId),
                     'showGuidelines' => (bool) $this->getSetting($contextId, 'showGuidelines', true),
                     'showBadges' => (bool) $this->getSetting($contextId, 'showBadges', true),
                     'customDecisionsCount' => count($decisions),
+                    'saveDecisionUrl' => $router->url($request, null, null, 'manage', null, ['verb' => 'saveDecision', 'plugin' => $this->getName(), 'category' => 'generic']),
+                    'deleteDecisionUrl' => $router->url($request, null, null, 'manage', null, ['verb' => 'deleteDecision', 'plugin' => $this->getName(), 'category' => 'generic']),
+                    'toggleDecisionUrl' => $router->url($request, null, null, 'manage', null, ['verb' => 'toggleDecision', 'plugin' => $this->getName(), 'category' => 'generic']),
+                    'resetDefaultsUrl' => $router->url($request, null, null, 'manage', null, ['verb' => 'resetDefaults', 'plugin' => $this->getName(), 'category' => 'generic']),
+                    'saveGeneralSettingsUrl' => $router->url($request, null, null, 'manage', null, ['verb' => 'saveGeneralSettings', 'plugin' => $this->getName(), 'category' => 'generic']),
+                    'settingsUrl' => $router->url($request, null, null, 'manage', null, ['verb' => 'settings', 'plugin' => $this->getName(), 'category' => 'generic']),
                 ]);
 
                 return new JSONMessage(true, $templateMgr->fetch($this->getTemplateResource('settings/settings.tpl')));
@@ -224,7 +244,7 @@ class CustomReviewerDecisionsPlugin extends GenericPlugin
                     }
                 }
 
-                $service->saveDecision($contextId, [
+                $savedRecord = $service->saveDecision($contextId, [
                     'id' => $id,
                     'key' => $key,
                     'name' => $names,
@@ -237,6 +257,7 @@ class CustomReviewerDecisionsPlugin extends GenericPlugin
                 return new JSONMessage(true, [
                     'status' => 'success',
                     'message' => __('plugins.generic.customReviewerDecisionsPlugin.savedSuccessfully'),
+                    'decision' => $savedRecord,
                 ]);
 
             case 'deleteDecision':
