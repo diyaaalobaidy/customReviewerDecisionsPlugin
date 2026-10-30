@@ -1,0 +1,171 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Custom Reviewer Decisions Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-31T00:00:00+00:00\n"
+"PO-Revision-Date: 2026-10-31T00:00:00+00:00\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.displayName"
+msgstr "Custom Reviewer Decisions Manager"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.description"
+msgstr "Enables journal managers to configure, edit, translate, and expand reviewer recommendation options (e.g., Minor Revisions, Major Revisions, Conditional Acceptance) with full multilingual support."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.settings.title"
+msgstr "Reviewer Decisions Management"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.settings.description"
+msgstr "Manage and customize the recommendation options available to peer reviewers and handling editors across all review stages."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.stats.total"
+msgstr "Decisions Configured"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.generalOptions"
+msgstr "General Preferences"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.showGuidelines"
+msgstr "Show Interactive Reviewer Guidelines"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.showGuidelines.desc"
+msgstr "Display contextual explanation and criteria directly below the decision dropdown on Step 3 of the review."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.showBadges"
+msgstr "Highlight Decisions with Visual Color Badges"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.showBadges.desc"
+msgstr "Decorate reviewer decisions with colored status badges in editorial workflow grids and review modals."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.decisionsList"
+msgstr "Reviewer Decisions & Recommendations"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.decisionsList.desc"
+msgstr "Add custom decisions, edit multilingual titles, toggle availability, or customize reviewer instructions."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.addDecision"
+msgstr "Add Custom Decision"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.resetDefaults"
+msgstr "Reset to Defaults"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.decisionTitle"
+msgstr "Decision Title"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.description"
+msgstr "Description"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.reviewerGuidelines"
+msgstr "Reviewer Guidelines"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.color"
+msgstr "Color & Badge"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.type"
+msgstr "Type"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.default"
+msgstr "Default"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.custom"
+msgstr "Custom"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.toggleStatus"
+msgstr "Click to enable or disable this decision"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.missingTranslation"
+msgstr "Missing translation for"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.info.title"
+msgstr "How Custom Reviewer Decisions Work"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.info.body"
+msgstr "All active decisions configured above appear in the recommendation select dropdown when reviewers complete Step 3 of their evaluation, as well as in the editor proxy review modal. Reviewers will see titles and guidelines in their active session language."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.addTitle"
+msgstr "Create New Reviewer Decision"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.editTitle"
+msgstr "Edit Reviewer Decision (ID: {$id})"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.subtitle"
+msgstr "Specify multilingual labels, reviewer criteria, and visual badge style."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.key"
+msgstr "Internal Key"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.key.desc"
+msgstr "Unique alphanumeric identifier for system reference."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.sequence"
+msgstr "Display Order"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.sequence.desc"
+msgstr "Sort position in the recommendation dropdown (lower numbers appear first)."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.color.desc"
+msgstr "Choose the status color used for workflow badges and indicator dots."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.multilingualContent"
+msgstr "Multilingual Titles & Guidelines"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.multilingualHelp"
+msgstr "Switch between language tabs to provide translations for all enabled journal locales."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.titlePlaceholder"
+msgstr "Enter decision name as seen by reviewers and editors"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.descPlaceholder"
+msgstr "Guidance for reviewers: explain when this recommendation should be selected..."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.enableDecision"
+msgstr "Enable this decision"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.modal.enableDecision.desc"
+msgstr "When enabled, reviewers and editors can select this decision from dropdowns."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.color.green"
+msgstr "Green (Accept / Success)"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.color.blue"
+msgstr "Blue (Minor Revisions / Info)"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.color.orange"
+msgstr "Amber / Orange (Major Revisions / Warning)"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.color.red"
+msgstr "Red (Decline / Reject)"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.color.purple"
+msgstr "Purple (Resubmit for Review)"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.color.teal"
+msgstr "Teal (Conditional Accept)"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.color.darkred"
+msgstr "Dark Red (Reject - Scope)"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.color.gray"
+msgstr "Grey (See Comments / Transfer)"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.savedSuccessfully"
+msgstr "Decision saved successfully."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.deletedSuccessfully"
+msgstr "Decision deleted successfully."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.resetSuccessfully"
+msgstr "Reviewer decisions have been reset to curated system defaults."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.settingsSaved"
+msgstr "General preferences saved successfully."
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.guidelinesLabel"
+msgstr "Decision Criteria & Guidelines"
+
+msgid "plugins.generic.customReviewerDecisionsPlugin.selectDecisionHint"
+msgstr "Select a recommendation above to view detailed guidance for this decision."
